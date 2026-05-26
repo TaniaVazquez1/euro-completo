@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Florencia · Europa 2026</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Florencia · Europa 2026</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">Italia · 29 junio → 1 julio</div>
+<div class="hero">
+<div class="hero-eyebrow">Europa 2026 · Italia</div>
 
-    <h1>Florencia</h1>
+<h1 class="hero-title">Florencia</h1>
 
-    <div class="hero-sub">
-      Duomo · vino · leather markets · sunsets
-    </div>
+<div class="hero-sub">
+Duomo · leather markets · vino · sunsets
+</div>
 
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
-  </div>
+<div class="hero-meta">
+<div class="hero-chip">🚂 Roma → Firenze · 29 jun · 8:50 → 10:27</div>
+<div class="hero-chip">🚂 Firenze → Cinque Terre · 1 jul · 7:54</div>
+<div class="hero-chip">🛏 2 noches</div>
+<div class="hero-chip">🍷 Toscana</div>
+</div>
 
-  <div class="city">
+<a href="index.html" class="nav-back">← Volver</a>
+</div>
 
-    <div class="city-header">
-      <div class="city-name">29 junio</div>
+<!-- 29 -->
 
-      <div class="city-dates">
-        centro histórico · sunset
-      </div>
-    </div>
+<div class="day open" id="fl1">
 
-    <div class="section">
+<div class="day-header" onclick="toggle('fl1')">
 
-      <div class="day-title">
-        Llegada desde Roma
-      </div>
+<div class="day-num">29</div>
 
-      <div class="day-sub">
-        Tren Roma → Firenze · llegada 10:27.
-      </div>
+<div>
+<div class="day-name">Duomo · Ponte Vecchio · Sunset</div>
+<div class="day-date">Lunes 29 de junio</div>
+</div>
 
-      <div class="item">
-        <div class="time">~13:00</div>
+<div class="day-theme">Llegada desde Roma</div>
 
-        <div class="content">
-          <h4>Duomo + Piazza della Signoria</h4>
-
-          <p>
-            Primera tarde recorriendo el corazón de Florencia.
-          </p>
-
-          <div class="tags">
-            <span class="tag">sightseeing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~18:30</div>
-
-        <div class="content">
-          <h4>Piazzale Michelangelo</h4>
-
-          <p>
-            Sunset clásico de Florencia.
-          </p>
-
-          <div class="tags">
-            <span class="tag">sunset</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<div class="day-toggle">▾</div>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Tarde</div>
+
+<div class="item">
+<div class="item-time">10:27</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">🚂 Llegada a Florencia</div>
+
+<div class="item-sub">
+Llegada a Firenze Santa Maria Novella
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~13:00</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">★ Duomo di Firenze</div>
+
+<div class="item-sub">
+Catedral · Baptisterio · Piazza del Duomo
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~15:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Piazza della Signoria</div>
+
+<div class="item-sub">
+Centro histórico clásico de Florencia
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~17:00</div>
+<div class="item-dot"><span class="dot dot-eat"></span></div>
+
+<div class="item-content">
+<div class="item-name">Gelato · Vivoli</div>
+
+<div class="item-sub">
+Gelato clásico florentino
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~19:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Piazzale Michelangelo</div>
+
+<div class="item-sub">
+Sunset más famoso de Florencia
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
-
 </html>

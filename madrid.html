@@ -1,110 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Madrid · Europa 2026</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madrid · Europa 2026</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">España · 7 → 10 julio</div>
+<div class="hero">
 
-    <h1>Madrid</h1>
+<div class="hero-eyebrow">Europa 2026 · España</div>
 
-    <div class="hero-sub">
-      Shopping · rooftops · despedida del viaje
-    </div>
+<h1 class="hero-title">Madrid</h1>
 
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
-  </div>
+<div class="hero-sub">
+Rooftops · shopping · despedida del viaje
+</div>
 
-  <div class="city">
+<div class="hero-meta">
+<div class="hero-chip">🚂 Pamplona → Madrid · 7 jul · 11:59 → 16:37</div>
+<div class="hero-chip">✈ Madrid → Guadalajara · 10 jul · 14:35</div>
+<div class="hero-chip">🛏 3 noches</div>
+<div class="hero-chip">🛍 Final boss shopping</div>
+</div>
 
-    <div class="city-header">
-      <div class="city-name">8 julio</div>
-
-      <div class="city-dates">
-        retiro · shopping · nightlife
-      </div>
-    </div>
-
-    <div class="section">
-
-      <div class="day-title">
-        Madrid clásico
-      </div>
-
-      <div class="item">
-        <div class="time">~11:00</div>
-
-        <div class="content">
-          <h4>Retiro + Salamanca</h4>
-
-          <p>
-            Caminata tranquila y brunch.
-          </p>
-
-          <div class="tags">
-            <span class="tag">sightseeing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~15:00</div>
-
-        <div class="content">
-          <h4>Shopping afternoon</h4>
-
-          <p>
-            Zara · Brandy Melville · Gran Vía · Fuencarral.
-          </p>
-
-          <div class="tags">
-            <span class="tag">shopping</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~21:00</div>
-
-        <div class="content">
-          <h4>Última gran noche</h4>
-
-          <p>
-            Rooftops · cena · fiesta.
-          </p>
-
-          <div class="tags">
-            <span class="tag">nightlife</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<a href="index.html" class="nav-back">← Volver</a>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day open" id="mad1">
+
+<div class="day-header" onclick="toggle('mad1')">
+
+<div class="day-num">8</div>
+
+<div>
+<div class="day-name">Retiro · Salamanca · Gran Vía</div>
+<div class="day-date">Miércoles 8 de julio</div>
+</div>
+
+<div class="day-theme">Madrid clásico</div>
+
+<div class="day-toggle">▾</div>
+
+</div>
+
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Mañana</div>
+
+<div class="item">
+<div class="item-time">~11:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Parque del Retiro</div>
+
+<div class="item-sub">
+Mañana tranquila después de San Fermín
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~13:00</div>
+<div class="item-dot"><span class="dot dot-eat"></span></div>
+
+<div class="item-content">
+<div class="item-name">Brunch · Salamanca</div>
+
+<div class="item-sub">
+Zona más aesthetic de Madrid
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">Tarde</div>
+
+<div class="item">
+<div class="item-time">~15:00</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Shopping afternoon</div>
+
+<div class="item-sub">
+Zara · Brandy Melville · Gran Vía · Fuencarral
+</div>
+
+<div class="tags">
+<span class="tag tag-book">shopping</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~19:30</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Templo de Debod sunset</div>
+
+<div class="item-sub">
+Uno de los sunsets más famosos de Madrid
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">Noche</div>
+
+<div class="item">
+<div class="item-time">~22:00</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Rooftops + fiesta</div>
+
+<div class="item-sub">
+Última gran noche del viaje
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
-
 </html>

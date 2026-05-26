@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Barcelona · Europa 2026</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barcelona · Europa 2026</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">España · 4 → 5 julio</div>
+<div class="hero">
 
-    <h1>Barcelona</h1>
+<div class="hero-eyebrow">Europa 2026 · España</div>
 
-    <div class="hero-sub">
-      Beach clubs · shopping · fiesta
-    </div>
+<h1 class="hero-title">Barcelona</h1>
 
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
-  </div>
+<div class="hero-sub">
+Beach clubs · shopping · nightlife
+</div>
 
-  <div class="city">
+<div class="hero-meta">
+<div class="hero-chip">✈ Bérgamo → Barcelona · 4 jul · 13:10 → 14:50</div>
+<div class="hero-chip">🚂 Barcelona → Pamplona · 5 jul · 12:50</div>
+<div class="hero-chip">🛏 1 noche</div>
+<div class="hero-chip">🛍 Shopping stop</div>
+</div>
 
-    <div class="city-header">
-      <div class="city-name">4 julio</div>
-
-      <div class="city-dates">
-        shopping · beach · nightlife
-      </div>
-    </div>
-
-    <div class="section">
-
-      <div class="day-title">
-        Llegada desde Milán Bérgamo
-      </div>
-
-      <div class="day-sub">
-        Día ligero después del traslado más pesado del viaje.
-      </div>
-
-      <div class="item">
-        <div class="time">~17:00</div>
-
-        <div class="content">
-          <h4>Passeig de Gràcia shopping</h4>
-
-          <p>
-            Zara · Brandy Melville · Bershka · Sephora.
-          </p>
-
-          <div class="tags">
-            <span class="tag">shopping</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~20:00</div>
-
-        <div class="content">
-          <h4>Barceloneta + dinner</h4>
-
-          <p>
-            Cena relajada cerca de la playa.
-          </p>
-
-          <div class="tags">
-            <span class="tag">beach</span>
-            <span class="tag">dinner</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<a href="index.html" class="nav-back">← Volver</a>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day open" id="bar1">
+
+<div class="day-header" onclick="toggle('bar1')">
+
+<div class="day-num">4</div>
+
+<div>
+<div class="day-name">Passeig de Gràcia · Barceloneta</div>
+<div class="day-date">Sábado 4 de julio</div>
+</div>
+
+<div class="day-theme">Día ligero</div>
+
+<div class="day-toggle">▾</div>
+
+</div>
+
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Tarde</div>
+
+<div class="item">
+<div class="item-time">14:50</div>
+<div class="item-dot"><span class="dot dot-tip"></span></div>
+
+<div class="item-content">
+<div class="item-name">Llegada a Barcelona</div>
+
+<div class="item-sub">
+Después del traslado más pesado del viaje
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~17:00</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Shopping · Passeig de Gràcia</div>
+
+<div class="item-sub">
+Brandy Melville · Zara · Sephora · Bershka
+</div>
+
+<div class="tags">
+<span class="tag tag-book">shopping</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~20:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Barceloneta sunset</div>
+
+<div class="item-sub">
+Cena relajada cerca de la playa
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
-
 </html>

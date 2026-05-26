@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Cinque Terre · Europa 2026</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinque Terre · Europa 2026</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">Italia · 1 → 4 julio</div>
+<div class="hero">
+<div class="hero-eyebrow">Europa 2026 · Italia</div>
 
-    <h1>Cinque Terre</h1>
+<h1 class="hero-title">Cinque Terre</h1>
 
-    <div class="hero-sub">
-      Vernazza · hikes · beach · boat days
-    </div>
+<div class="hero-sub">
+Vernazza · Monterosso · hikes · beach clubs
+</div>
 
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
-  </div>
+<div class="hero-meta">
+<div class="hero-chip">🚂 Llegada · 1 jul · 10:07</div>
+<div class="hero-chip">✈ Milán → Barcelona · 4 jul · 13:10</div>
+<div class="hero-chip">🛏 3 noches</div>
+<div class="hero-chip">🌊 Coastal summer</div>
+</div>
 
-  <div class="city">
+<a href="index.html" class="nav-back">← Volver</a>
+</div>
 
-    <div class="city-header">
-      <div class="city-name">2 julio</div>
+<!-- 2 JULIO -->
 
-      <div class="city-dates">
-        hike · playa · boat day
-      </div>
-    </div>
+<div class="day open" id="ct1">
 
-    <div class="section">
+<div class="day-header" onclick="toggle('ct1')">
 
-      <div class="day-title">
-        Día fuerte Cinque Terre
-      </div>
+<div class="day-num">2</div>
 
-      <div class="item">
-        <div class="time">~10:00</div>
+<div>
+<div class="day-name">Hike · Monterosso · Beach Day</div>
+<div class="day-date">Jueves 2 de julio</div>
+</div>
 
-        <div class="content">
-          <h4>Hike Vernazza → Monterosso</h4>
+<div class="day-theme">Cinque Terre completo</div>
 
-          <p>
-            Sendero costero clásico entre pueblos.
-          </p>
-
-          <div class="tags">
-            <span class="tag">hike</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~14:00</div>
-
-        <div class="content">
-          <h4>Beach afternoon</h4>
-
-          <p>
-            Monterosso beach clubs + aperol.
-          </p>
-
-          <div class="tags">
-            <span class="tag">beach</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<div class="day-toggle">▾</div>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Mañana</div>
+
+<div class="item">
+<div class="item-time">~09:30</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">★ Hike Vernazza → Monterosso</div>
+
+<div class="item-sub">
+El hike más famoso de Cinque Terre
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">Tarde</div>
+
+<div class="item">
+<div class="item-time">~13:00</div>
+<div class="item-dot"><span class="dot dot-eat"></span></div>
+
+<div class="item-content">
+<div class="item-name">Lunch frente al mar</div>
+
+<div class="item-sub">
+Seafood + aperol
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~15:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Monterosso beach clubs</div>
+
+<div class="item-sub">
+Día completo de playa y descanso
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
-
 </html>

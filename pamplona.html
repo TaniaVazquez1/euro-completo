@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Pamplona · Europa 2026</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pamplona · Europa 2026</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">España · 5 → 7 julio</div>
+<div class="hero">
 
-    <h1>Pamplona</h1>
+<div class="hero-eyebrow">Europa 2026 · España</div>
 
-    <div class="hero-sub">
-      San Fermín · encierros · caos
-    </div>
+<h1 class="hero-title">Pamplona</h1>
 
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
-  </div>
+<div class="hero-sub">
+San Fermín · encierros · caos
+</div>
 
-  <div class="city">
+<div class="hero-meta">
+<div class="hero-chip">🚂 Barcelona → Pamplona · 5 jul · 12:50 → 17:24</div>
+<div class="hero-chip">🚂 Pamplona → Madrid · 7 jul · 11:59</div>
+<div class="hero-chip">🛏 2 noches</div>
+<div class="hero-chip">🐂 San Fermín</div>
+</div>
 
-    <div class="city-header">
-      <div class="city-name">6 julio</div>
-
-      <div class="city-dates">
-        chupinazo · san fermín
-      </div>
-    </div>
-
-    <div class="section">
-
-      <div class="day-title">
-        San Fermín
-      </div>
-
-      <div class="day-sub">
-        Mantener el día flexible.
-      </div>
-
-      <div class="item">
-        <div class="time">~12:00</div>
-
-        <div class="content">
-          <h4>Chupinazo</h4>
-
-          <p>
-            Plaza del Ayuntamiento y calles del centro histórico.
-          </p>
-
-          <div class="tags">
-            <span class="tag">festival</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<a href="index.html" class="nav-back">← Volver</a>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day open" id="pam1">
+
+<div class="day-header" onclick="toggle('pam1')">
+
+<div class="day-num">6</div>
+
+<div>
+<div class="day-name">San Fermín</div>
+<div class="day-date">Lunes 6 de julio</div>
+</div>
+
+<div class="day-theme">Caos absoluto</div>
+
+<div class="day-toggle">▾</div>
+
+</div>
+
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Todo el día</div>
+
+<div class="item">
+<div class="item-time">~12:00</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">★ Chupinazo</div>
+
+<div class="item-sub">
+Plaza del Ayuntamiento · inicio oficial de San Fermín
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">all day</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Fiesta en el centro histórico</div>
+
+<div class="item-sub">
+Bares · plazas · calles llenas toda la noche
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
-
 </html>

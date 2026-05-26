@@ -2,133 +2,249 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Oporto · Europa 2026</title>
+<title>Oporto · Europa 2026</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-  <div class="hero">
-    <div class="eyebrow">Portugal · 21 → 23 junio</div>
+<div class="hero">
+  <div class="hero-eyebrow">Europa 2026 · Portugal</div>
 
-    <h1>Oporto</h1>
+  <h1 class="hero-title">Oporto</h1>
 
-    <div class="hero-sub">
-      Ribeira · Gaia · vino · sunsets · cafés
-    </div>
-
-    <div class="nav">
-      <a href="index.html">← Volver</a>
-    </div>
+  <div class="hero-sub">
+    Ribeira · vinho verde · azulejos · sunsets
   </div>
 
-  <div class="city">
-
-    <div class="city-header">
-      <div class="city-name">21 junio</div>
-
-      <div class="city-dates">
-        llegada · ribeira · gaia
-      </div>
-    </div>
-
-    <div class="section">
-
-      <div class="day-title">
-        Día suave post-vuelos
-      </div>
-
-      <div class="day-sub">
-        Llegada desde Guadalajara → Madrid → Oporto.
-      </div>
-
-      <div class="item">
-        <div class="time">~11:00</div>
-
-        <div class="content">
-          <h4>Check-in + refrescarse</h4>
-
-          <p>
-            Llegada al alojamiento y tiempo para bañarse/comer algo.
-          </p>
-
-          <div class="tags">
-            <span class="tag">llegada</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~13:00</div>
-
-        <div class="content">
-          <h4>Ribeira</h4>
-
-          <p>
-            Primera caminata tranquila por el río · comida con vista al Duero.
-          </p>
-
-          <div class="tags">
-            <span class="tag">sightseeing</span>
-            <span class="tag">comida</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~17:30</div>
-
-        <div class="content">
-          <h4>Puente Dom Luís I + Gaia</h4>
-
-          <p>
-            Cruzar caminando hacia Gaia para sunset y vino.
-          </p>
-
-          <div class="tags">
-            <span class="tag">sunset</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="time">~20:00</div>
-
-        <div class="content">
-          <h4>Cena frente al río</h4>
-
-          <p>
-            Mantener la noche ligera para recuperarse del vuelo overnight.
-          </p>
-
-          <div class="tags">
-            <span class="tag">cena</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="note">
-        Día suave intencionalmente — no vale la pena intentar hacer sightseeing pesado el primer día.
-      </div>
-
-    </div>
-
+  <div class="hero-meta">
+    <div class="hero-chip">✈ Madrid → Oporto · 21 jun · 8:50 → 9:10</div>
+    <div class="hero-chip">🚂 Salida a Lisboa · 23 jun · 7:40 am</div>
+    <div class="hero-chip">🛏 2 noches</div>
+    <div class="hero-chip">🍷 Primera parada del viaje</div>
   </div>
+
+  <a href="index.html" class="nav-back">← Volver</a>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="dot dot-must"></span> Imperdible</div>
+  <div class="legend-item"><span class="dot dot-sight"></span> Sightseeing</div>
+  <div class="legend-item"><span class="dot dot-eat"></span> Comer</div>
+  <div class="legend-item"><span class="dot dot-bar"></span> Bares / Noche</div>
+  <div class="legend-item"><span class="dot dot-tip"></span> Consejo</div>
+</div>
+
+<div class="main">
+
+<div class="day open" id="day1">
+
+<div class="day-header" onclick="toggle('day1')">
+
+<div class="day-num">21</div>
+
+<div class="day-info">
+<div class="day-name">Llegada · Ribeira · Gaia</div>
+<div class="day-date">Domingo 21 de junio</div>
+</div>
+
+<div class="day-theme">Primer día en Europa</div>
+
+<div class="day-toggle">▾</div>
 
 </div>
 
-<script src="script.js"></script>
+<div class="day-body">
+
+<div class="section">
+
+<div class="section-label">Mañana</div>
+
+<div class="item">
+<div class="item-time">04:45</div>
+<div class="item-dot"><span class="dot dot-tip"></span></div>
+
+<div class="item-content">
+<div class="item-name">Llegada a Madrid</div>
+
+<div class="item-sub">
+Aterrizan desde Guadalajara · conexión rápida hacia Oporto
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">09:10</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">✈ Llegada a Oporto</div>
+
+<div class="item-sub">
+Primer país del viaje oficialmente ✓
+</div>
+
+<div class="tags">
+<span class="tag tag-must">portugal</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~11:00</div>
+<div class="item-dot"><span class="dot dot-tip"></span></div>
+
+<div class="item-content">
+<div class="item-name">Check-in + café tranquilo</div>
+
+<div class="item-sub">
+Día intentionally suave porque vienen del vuelo overnight
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">Tarde</div>
+
+<div class="item">
+<div class="item-time">~13:00</div>
+<div class="item-dot"><span class="dot dot-eat"></span></div>
+
+<div class="item-content">
+<div class="item-name">Lunch · Mercado do Bolhão</div>
+
+<div class="item-sub">
+Probar francesinha o comida portuguesa casual
+</div>
+
+<div class="tags">
+<span class="tag tag-eat">almuerzo</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~15:00</div>
+<div class="item-dot"><span class="dot dot-must"></span></div>
+
+<div class="item-content">
+<div class="item-name must">★ Ribeira</div>
+
+<div class="item-sub">
+La zona más clásica de Oporto · casas coloridas junto al Duero
+</div>
+
+<div class="tags">
+<span class="tag tag-must">imperdible</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~17:00</div>
+<div class="item-dot"><span class="dot dot-sight"></span></div>
+
+<div class="item-content">
+<div class="item-name">Puente Dom Luís I</div>
+
+<div class="item-sub">
+Cruzar caminando hacia Gaia · probablemente la foto más icónica de Oporto
+</div>
+
+<div class="tags">
+<span class="tag tag-sight">sunset</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~18:30</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Aperitivo · WOW Porto</div>
+
+<div class="item-sub">
+Vino portugués + vista al río
+</div>
+
+<div class="tags">
+<span class="tag tag-bar">rooftop</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">Noche</div>
+
+<div class="item">
+<div class="item-time">~20:30</div>
+<div class="item-dot"><span class="dot dot-eat"></span></div>
+
+<div class="item-content">
+<div class="item-name">Cena · Taberna dos Mercadores</div>
+
+<div class="item-sub">
+Restaurante portugués pequeño muy recomendado
+</div>
+
+<div class="tags">
+<span class="tag tag-eat">cena</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="item-time">~22:30</div>
+<div class="item-dot"><span class="dot dot-bar"></span></div>
+
+<div class="item-content">
+<div class="item-name">Copas · Galerias de Paris</div>
+
+<div class="item-sub">
+Zona principal de bares y nightlife en Oporto
+</div>
+
+<div class="tags">
+<span class="tag tag-bar">nightlife</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="note">
+💡 No saturar este día. Lo importante es mantenerse despiertas hasta la noche para vencer el jet lag rápido.
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+Oporto · Junio 2026
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+document.getElementById(id).classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
