@@ -1,295 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Europa 2026</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Europa 2026</title>
 
-<style>
-:root {
-  --bg: #f4f1ed;
-  --card: #f8f6f3;
-  --line: #ddd5cb;
-  --text: #2d2a26;
-  --muted: #7b746d;
-  --accent: #c96c3b;
-  --olive: #67704d;
-  --blue: #51647c;
-  --gold: #c79c43;
-  --tag: #ece6df;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.65;
-  padding: 42px 18px 80px;
-}
-
-.container {
-  max-width: 820px;
-  margin: 0 auto;
-}
-
-.hero {
-  margin-bottom: 34px;
-}
-
-.eyebrow {
-  font-size: 11px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 62px;
-  font-weight: 500;
-  letter-spacing: -.03em;
-  line-height: .95;
-  margin-bottom: 14px;
-}
-
-.hero-sub {
-  max-width: 620px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 22px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  transition: .2s ease;
-}
-
-.nav a:hover {
-  background: white;
-}
-
-.city {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 22px;
-}
-
-.city-header {
-  padding: 24px 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
-.city-left {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-.city-number {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 42px;
-  color: var(--accent);
-  min-width: 40px;
-}
-
-.city-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 34px;
-  line-height: 1;
-}
-
-.city-dates {
-  margin-top: 4px;
-  font-size: 12px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.city-tag {
-  background: var(--tag);
-  color: var(--muted);
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 12px;
-}
-
-.city-body {
-  display: none;
-  border-top: 1px solid var(--line);
-}
-
-.city.open .city-body {
-  display: block;
-}
-
-.section {
-  padding: 22px 28px;
-  border-bottom: 1px solid var(--line);
-}
-
-.section:last-child {
-  border-bottom: none;
-}
-
-.section-title {
-  font-size: 11px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.section-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}
-
-.day-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 34px;
-  margin-bottom: 4px;
-}
-
-.day-sub {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 24px;
-}
-
-.item {
-  display: grid;
-  grid-template-columns: 74px 1fr;
-  gap: 18px;
-  padding: 16px 0;
-  border-top: 1px solid var(--line);
-}
-
-.item:first-of-type {
-  border-top: none;
-}
-
-.time {
-  font-size: 13px;
-  color: var(--muted);
-  text-align: right;
-  padding-top: 2px;
-}
-
-.content h4 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.content p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.tag {
-  padding: 5px 10px;
-  border-radius: 999px;
-  font-size: 11px;
-  background: var(--tag);
-  color: var(--muted);
-}
-
-.tag.sightseeing { color: var(--blue); }
-.tag.food { color: var(--olive); }
-.tag.party { color: #946e1a; }
-.tag.shopping { color: #92556c; }
-
-.note {
-  margin-top: 24px;
-  background: #efe8de;
-  border-left: 3px solid var(--gold);
-  padding: 16px 18px;
-  border-radius: 0 10px 10px 0;
-  font-size: 14px;
-  color: #756d63;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 34px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  .city-header {
-    padding: 20px;
-  }
-
-  .section {
-    padding: 20px;
-  }
-
-  .city-name {
-    font-size: 28px;
-  }
-
-  .item {
-    grid-template-columns: 58px 1fr;
-    gap: 14px;
-  }
-}
-</style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <div class="container">
 
   <div class="hero">
     <div class="eyebrow">Eurotrip 2026 · Summer itinerary</div>
+
     <h1>Europa<br>2026</h1>
 
     <div class="hero-sub">
@@ -299,152 +31,20 @@ h1 {
     </div>
 
     <div class="nav">
-      <a href="#porto">Oporto</a>
-      <a href="#lisboa">Lisboa</a>
-      <a href="#roma">Roma</a>
-      <a href="#florencia">Florencia</a>
-      <a href="#cinque">Cinque Terre</a>
-      <a href="#barcelona">Barcelona</a>
-      <a href="#pamplona">Pamplona</a>
-      <a href="#madrid">Madrid</a>
-    </div>
-  </div>
-
-  <!-- OPORTO -->
-  <div class="city open" id="porto">
-
-    <div class="city-header" onclick="toggleCity('porto')">
-      <div class="city-left">
-        <div class="city-number">21</div>
-
-        <div>
-          <div class="city-name">Oporto</div>
-          <div class="city-dates">21 → 23 junio · 2 noches</div>
-        </div>
-      </div>
-
-      <div class="city-tag">Llegada tranquila</div>
-    </div>
-
-    <div class="city-body">
-
-      <div class="section">
-        <div class="section-title">21 junio · llegada</div>
-
-        <div class="day-title">Ribeira · Gaia · Sunset</div>
-        <div class="day-sub">
-          Día ligero a propósito — llegan desde Guadalajara + conexión Madrid.
-        </div>
-
-        <div class="item">
-          <div class="time">~11:00</div>
-
-          <div class="content">
-            <h4>Check-in + refrescarse</h4>
-            <p>
-              Llegada al alojamiento y tiempo para bañarse/comer algo después de los vuelos.
-            </p>
-
-            <div class="tags">
-              <span class="tag">llegada</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="time">~13:00</div>
-
-          <div class="content">
-            <h4>Ribeira</h4>
-            <p>
-              Primera caminata tranquila por el río · comida con vista al Duero.
-            </p>
-
-            <div class="tags">
-              <span class="tag sightseeing">sightseeing</span>
-              <span class="tag food">comida</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="time">~17:30</div>
-
-          <div class="content">
-            <h4>Puente Dom Luís I + Gaia</h4>
-            <p>
-              Cruzar caminando hacia Gaia para sunset y vino.
-            </p>
-
-            <div class="tags">
-              <span class="tag sightseeing">sunset</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="time">~20:00</div>
-
-          <div class="content">
-            <h4>Cena frente al río</h4>
-            <p>
-              Mantener la noche ligera para recuperarse del vuelo overnight.
-            </p>
-
-            <div class="tags">
-              <span class="tag food">cena</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="note">
-          Día suave intencionalmente — no vale la pena intentar hacer sightseeing pesado el primer día.
-        </div>
-
-      </div>
-
-      <div class="section">
-        <div class="section-title">22 junio · día completo</div>
-
-        <div class="day-title">Centro histórico · cafés · vino</div>
-        <div class="day-sub">
-          Verdadero día turístico de Oporto.
-        </div>
-
-        <div class="item">
-          <div class="time">~10:00</div>
-
-          <div class="content">
-            <h4>Free walking tour</h4>
-            <p>
-              Ideal para entender la ciudad y ubicarse mejor.
-            </p>
-
-            <div class="tags">
-              <span class="tag sightseeing">tour</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
+      <a href="porto.html">Oporto</a>
+      <a href="lisboa.html">Lisboa</a>
+      <a href="roma.html">Roma</a>
+      <a href="florencia.html">Florencia</a>
+      <a href="cinque-terre.html">Cinque Terre</a>
+      <a href="barcelona.html">Barcelona</a>
+      <a href="pamplona.html">Pamplona</a>
+      <a href="madrid.html">Madrid</a>
     </div>
   </div>
 
 </div>
 
-<div class="footer">
-  Europa 2026
-</div>
-
-<script>
-function toggleCity(id) {
-  document.getElementById(id).classList.toggle('open');
-}
-</script>
+<script src="script.js"></script>
 
 </body>
-```
-
-
-
+</html>

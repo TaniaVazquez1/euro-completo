@@ -1,0 +1,1 @@
+console.log("Europa 2026 loaded");
